@@ -1,0 +1,17 @@
+{
+    "prettier.arrowParens": "always",
+    "prettier.bracketSameLine": true,
+    "prettier.bracketSpacing": true,
+    "prettier.embeddedLanguageFormatting": "auto",
+    "prettier.enable": true,
+    "prettier.endOfLine": "lf",
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "prettier.ignorePath": ".prettierignore",
+    "prettier.printWidth": 80,
+    "prettier.proseWrap": "preserve",
+    "prettier.quoteProps": "as-needed",
+    "prettier.semi": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "es5",
+    "prettier.useEditorConfig": true
+}

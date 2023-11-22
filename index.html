@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Play&family=Sofia+Sans:wght@200&display=swap"
+            rel="stylesheet" />
+        <title>Puzzle Mania!!!</title>
+    </head>
+    <body>
+        <h1 id="game-status">Start the Game!!!</h1>
+        <div class="puzzle-game__container">
+            <div class="grid-container">
+                <div class="grid-item dropzone" id="1div" attachedImg="1img">
+                    <img
+                        src="images/3x3/row-1-column-1.png"
+                        alt="1st piece"
+                        id="1img" />
+                </div>
+                <div class="grid-item dropzone" id="2div" attachedImg="2img">
+                    <img
+                        src="images/3x3/row-1-column-2.png"
+                        alt="1st piece"
+                        id="2img" />
+                </div>
+                <div class="grid-item dropzone" id="3div" attachedImg="3img">
+                    <img
+                        src="images/3x3/row-1-column-3.png"
+                        alt="1st piece"
+                        id="3img" />
+                </div>
+                <div class="grid-item dropzone" id="4div" attachedImg="4img">
+                    <img
+                        src="images/3x3/row-2-column-1.png"
+                        alt="1st piece"
+                        id="4img" />
+                </div>
+                <div class="grid-item dropzone" id="5div" attachedImg="5img">
+                    <img
+                        src="images/3x3/row-2-column-2.png"
+                        alt="1st piece"
+                        id="5img" />
+                </div>
+                <div class="grid-item dropzone" id="6div" attachedImg="6img">
+                    <img
+                        src="images/3x3/row-2-column-3.png"
+                        alt="1st piece"
+                        id="6img" />
+                </div>
+                <div class="grid-item dropzone" id="7div" attachedImg="7img">
+                    <img
+                        src="images/3x3/row-3-column-1.png"
+                        alt="1st piece"
+                        id="7img" />
+                </div>
+                <div class="grid-item dropzone" id="8div" attachedImg="8img">
+                    <img
+                        src="images/3x3/row-3-column-2.png"
+                        alt="1st piece"
+                        id="8img" />
+                </div>
+                <div class="grid-item dropzone" id="9div" attachedImg="9img">
+                    <img
+                        src="images/3x3/row-3-column-3.png"
+                        alt="1st piece"
+                        id="9img" />
+                </div>
+            </div>
+            <div class="game-details">
+                <button type="button" id="startBtn">Start Game</button>
+                <button type="button" id="quitBtn">Quit Game</button>
+                <div id="move-count">
+                    <p id="movesCount">Total Moves: <strong id="moves-count">0</strong></p>
+                    <p id="wrongCount">Wrong Moves: <strong id="wrong-counts">0</strong></p>
+                    <p id="correctCount">Correct Moves: <strong id="correct-counts">0</strong></p>
+                    <p id="finalScore">Final Score: <strong id="score">0%</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
