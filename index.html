@@ -18,82 +18,31 @@
         <!-- app header -->
         <header id="app-header">
             <h1>Select a Puzzle</h1>
+            <button type="button" id="close-btn">Close Game</button>
         </header>
 
         <!-- starting view -->
         <div id="puzzle-selection">
-            <div class="puzzle-image__container" id="pi1"></div>
-            <div class="puzzle-image__container" id="pi2"></div>
-            <div class="puzzle-image__container" id="pi3"></div>
+            <div class="puzzle-image__container" id="pi1" puzzle="puzzle1"></div>
+            <div class="puzzle-image__container" id="pi2" puzzle="puzzle2"></div>
+            <div class="puzzle-image__container" id="pi3" puzzle="puzzle3"></div>
         </div>
 
         <!-- view after selecting puzzle -->
         <div id="puzzle-size__buttons">
-            <button type="button" id="3b3Btn">3 &times; 3</button>
-            <button type="button" id="4b4Btn">4 &times; 4</button>
+            <button type="button" class="size-btn" id="3b3Btn" puzzleSize="3x3">3 &times; 3</button>
+            <button type="button" class="size-btn" id="4b4Btn" puzzleSize="4x4">4 &times; 4</button>
+            <button type="button" id="back-btn">Back</button>
         </div>
 
         <!-- view after selecting puzzle size -->
         <div class="puzzle-game__container">
             <div id="grid-container">
-                <!-- <div class="grid-item dropzone" id="1div" attachedImg="1img">
-                    <img
-                        src="images/3x3/row-1-column-1.png"
-                        alt="1st piece"
-                        id="1img" />
-                </div>
-                <div class="grid-item dropzone" id="2div" attachedImg="2img">
-                    <img
-                        src="images/3x3/row-1-column-2.png"
-                        alt="1st piece"
-                        id="2img" />
-                </div>
-                <div class="grid-item dropzone" id="3div" attachedImg="3img">
-                    <img
-                        src="images/3x3/row-1-column-3.png"
-                        alt="1st piece"
-                        id="3img" />
-                </div>
-                <div class="grid-item dropzone" id="4div" attachedImg="4img">
-                    <img
-                        src="images/3x3/row-2-column-1.png"
-                        alt="1st piece"
-                        id="4img" />
-                </div>
-                <div class="grid-item dropzone" id="5div" attachedImg="5img">
-                    <img
-                        src="images/3x3/row-2-column-2.png"
-                        alt="1st piece"
-                        id="5img" />
-                </div>
-                <div class="grid-item dropzone" id="6div" attachedImg="6img">
-                    <img
-                        src="images/3x3/row-2-column-3.png"
-                        alt="1st piece"
-                        id="6img" />
-                </div>
-                <div class="grid-item dropzone" id="7div" attachedImg="7img">
-                    <img
-                        src="images/3x3/row-3-column-1.png"
-                        alt="1st piece"
-                        id="7img" />
-                </div>
-                <div class="grid-item dropzone" id="8div" attachedImg="8img">
-                    <img
-                        src="images/3x3/row-3-column-2.png"
-                        alt="1st piece"
-                        id="8img" />
-                </div>
-                <div class="grid-item dropzone" id="9div" attachedImg="9img">
-                    <img
-                        src="images/3x3/row-3-column-3.png"
-                        alt="1st piece"
-                        id="9img" />
-                </div> -->
+                <!-- puzzle pieces will be appended here -->
             </div>
             <div class="game-details">
-                <button type="button" id="startBtn">Start Game</button>
-                <button type="button" id="quitBtn">Quit Game</button>
+                <button type="button" id="startBtn">Start Puzzle</button>
+                <button type="button" id="quitBtn">Quit Puzzle</button>
                 <div id="move-count">
                     <p id="movesCount">Total Moves: <strong id="moves-count">0</strong></p>
                     <p id="wrongCount">Wrong Moves: <strong id="wrong-counts">0</strong></p>
@@ -103,6 +52,6 @@
             </div>
         </div>
 
-        <script type="module" src="test.js"></script>
+        <script type="module" src="script.js"></script>
     </body>
 </html>

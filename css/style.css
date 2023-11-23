@@ -17,6 +17,7 @@ body {
 }
 
 #app-header {
+    position: relative;
     height: 8rem;
     background-color: rgb(32, 32, 32);
     width: 100vw;
@@ -25,97 +26,22 @@ body {
     justify-content: center;
     align-items: center;
 }
-/* .puzzle-game__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 2rem;
-}
 
-#game-status {
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 4rem;
-}
-
-.puzzle-game__container {
-    min-height: calc(100vh - 10rem);
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 25rem;
-    width: 25rem;
-}
-
-.grid-item {
-    width: 100%;
-    height: auto;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.game-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.game-details button {
-    height: 3rem;
-    width: 15rem;
-    border-radius: 0.5rem;
-    border-style: none;
+#close-btn {
+    position: absolute;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, blue, red);
+    color: white;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
-    background-color: #150819;
-    color: #cfb7ef;
-    transition: transform 0.12s ease-in-out, color 0.12s ease-in-out, background-color 0.12s ease-in-out;
+    right: 2rem;
+    transition: transform 0.12s ease-in-out, color 0.12s ease-in-out, box-shadow 0.12s ease-in-out, background 0.12s ease-in-out;
 }
 
-.game-details button:hover {
-    transform: scale(1.2);
+#close-btn:hover {
+    transform: scale(1.1);
     color: #FFCE0F;
-    background-color: #250e2c;
-    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    background: linear-gradient(to left, blue, red);
 }
-
-#move-count p {
-    font-size: 1.8rem;
-}
-
-#correct-counts {
-    color: rgb(72, 255, 72);
-}
-
-#wrong-counts {
-    color: red;
-}
-
-#moves-count {
-    color: blue;
-}
-
-#finalScore {
-    visibility: hidden;
-}
-
-#score {
-    color: rgb(212, 212, 44);
-}
-
-#correct-counts,
-#wrong-counts,
-#moves-count,
-#score {
-    -webkit-text-stroke: #150819 0.1px;
-    font-size: 2rem;
-} */

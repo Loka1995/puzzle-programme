@@ -12,9 +12,16 @@
 
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     height: 25rem;
     width: 25rem;
+}
+
+.threeXthree {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fourXfour {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .grid-item {
@@ -39,19 +46,19 @@ img {
     height: 3rem;
     width: 15rem;
     border-radius: 0.5rem;
-    border-style: none;
     font-size: 1.5rem;
     margin-bottom: 3rem;
-    background-color: #150819;
-    color: #cfb7ef;
-    transition: transform 0.12s ease-in-out, color 0.12s ease-in-out, background-color 0.12s ease-in-out;
+    background: linear-gradient(to left, red, blue);
+    color: white;
+    transition: transform 0.12s ease-in-out, color 0.12s ease-in-out, background-color 0.12s ease-in-out, background 0.12s ease-in-out, box-shadow 0.12s ease-in-out;
 }
 
 .game-details button:hover {
     transform: scale(1.2);
     color: #FFCE0F;
-    background-color: #250e2c;
+    background: linear-gradient(to right, red, blue);
     cursor: pointer;
+    box-shadow: 0 0 15px white;
 }
 
 #move-count p {
@@ -67,7 +74,7 @@ img {
 }
 
 #moves-count {
-    color: blue;
+    color: rgb(30, 30, 255);
 }
 
 #finalScore {
@@ -82,6 +89,6 @@ img {
 #wrong-counts,
 #moves-count,
 #score {
-    -webkit-text-stroke: #150819 0.1px;
+    /* -webkit-text-stroke: #150819 0.1px; */
     font-size: 2rem;
 }
