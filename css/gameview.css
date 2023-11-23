@@ -1,50 +1,16 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Play';
-    color: 150819;
-}
-
-body {
-    background-color: black;
-    color: white;
-    display: flex;
-    padding: 0 5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#app-header {
-    height: 8rem;
-    background-color: rgb(32, 32, 32);
-    width: 100vw;
-    display: flex;
-    font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
-}
-/* .puzzle-game__container {
+.puzzle-game__container {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
 }
 
-#game-status {
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 4rem;
-}
 
 .puzzle-game__container {
     min-height: calc(100vh - 10rem);
 }
 
-.grid-container {
+#grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 25rem;
@@ -118,4 +84,4 @@ img {
 #score {
     -webkit-text-stroke: #150819 0.1px;
     font-size: 2rem;
-} */
+}

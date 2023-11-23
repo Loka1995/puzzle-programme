@@ -1,0 +1,26 @@
+#puzzle-size__buttons {
+    min-height: calc(100vh - 8rem);
+    min-width: 40vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#puzzle-size__buttons button {
+    width: 100%;
+    height: 6rem;
+    font-size: 3rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, blue, red);
+    color: white;
+    transition: transform 0.12s ease-in, box-shadow 0.12s ease-in, background 0.12s ease-in;
+    transition-delay: 0.12s;
+}
+
+#puzzle-size__buttons button:hover {
+    background: linear-gradient(to left, blue, red);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px white;
+}
